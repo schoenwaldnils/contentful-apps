@@ -6,4 +6,3 @@ build
 out
 .next
 .env
-.env.local
