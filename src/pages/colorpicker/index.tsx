@@ -39,13 +39,16 @@ const SwitchApp: NextPage<AppProps> = ({ sdk }) => {
     return subscribe()
   }, [sdk])
 
-  const handleChange = useCallback((color) => {
-    // Save the local state of the field value
-    setColor(color.hex)
-    // Save the state of the field value on contentful
-    // This will update the local (unpublished) change on contenful
-    void sdk.field.setValue(color.hex)
-  }, [])
+  const handleChange = useCallback(
+    (color) => {
+      // Save the local state of the field value
+      setColor(color.hex)
+      // Save the state of the field value on contentful
+      // This will update the local (unpublished) change on contenful
+      void sdk.field.setValue(color.hex)
+    },
+    [sdk.field],
+  )
 
   return (
     <ColorContainer>
