@@ -1,0 +1,9 @@
+.publish
+npm-debug.log
+
+node_modules
+build
+out
+.next
+.env
+.env.local
