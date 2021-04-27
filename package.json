@@ -33,6 +33,7 @@
     "@svgr/webpack": "5.5.0",
     "atomicassets": "1.2.2",
     "next": "10.0.5",
+    "qs": "6.10.1",
     "react": "17.0.1",
     "react-color": "2.19.3",
     "react-dom": "17.0.1",
